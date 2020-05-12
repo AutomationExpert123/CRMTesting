@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-05T15:27:52Z" name="Default suite" finished-at="2020-03-05T15:28:13Z" duration-ms="21066">
+    <groups>
+    </groups>
+    <test started-at="2020-03-05T15:27:52Z" name="Default test" finished-at="2020-03-05T15:28:13Z" duration-ms="21066">
+      <class name="com.OrangeHRM.Testcases.EmployeeListTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.OrangeHRM.Testcases.EmployeeListTest@7748410a]" started-at="2020-03-05T15:27:52Z" name="setUp" finished-at="2020-03-05T15:28:12Z" duration-ms="19958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyemployeelistpageTest()[pri:1, instance:com.OrangeHRM.Testcases.EmployeeListTest@7748410a]" started-at="2020-03-05T15:28:12Z" name="verifyemployeelistpageTest" finished-at="2020-03-05T15:28:12Z" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyemployeelistpageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.OrangeHRM.Testcases.EmployeeListTest@7748410a]" started-at="2020-03-05T15:28:12Z" name="tearDown" finished-at="2020-03-05T15:28:13Z" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="addNewEmployeeTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.OrangeHRM.Testcases.EmployeeListTest@7748410a]" started-at="2020-03-05T15:28:13Z" name="addNewEmployeeTest" data-provider="data-provider" finished-at="2020-03-05T15:28:13Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(Unknown Source)
+at java.base/java.security.SecureClassLoader.defineClass(Unknown Source)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(Unknown Source)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(Unknown Source)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(Unknown Source)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+at com.OrangeHRM.utility.TestUtil.getTestData(TestUtil.java:24)
+at com.OrangeHRM.Testcases.EmployeeListTest.getHRMTestData(EmployeeListTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 22 more
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+... 40 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmployeeTest -->
+      </class> <!-- com.OrangeHRM.Testcases.EmployeeListTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
